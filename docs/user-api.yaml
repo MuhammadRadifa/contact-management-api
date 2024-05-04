@@ -1,0 +1,22 @@
+openApi: 3.0.0
+info:
+  title: User Api
+  description: User Api
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+paths:
+  /api/users:
+    post:
+      description: register new user
+  /api/users/login:
+    post:
+      description: login user
+  /api/users/current:
+    get:
+      description: get current user
+    patch:
+      description: update current user
+  /api/users/logout:
+    delete:
+      description: logout user
